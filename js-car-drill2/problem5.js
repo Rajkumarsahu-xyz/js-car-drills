@@ -4,17 +4,14 @@
 const invent = require("./inventory");
 const { problem4 } = require("./problem4")
 
-function noOfCarsOlderThan2000(invent) {
+function carsOlderThan2000(invent) {
    const yearsArray = problem4(invent)
    let filterYearLess2000 = yearsArray.filter(years => years < 2000);
-
-   console.log(filterYearLess2000.length)
-}
-
-function detailsOfCarsOlderThan2000(invent){
    const detailsOfCarsArray = invent.filter(item => item.car_year < 2000);
+   
+   console.log(filterYearLess2000.length);
    console.log(detailsOfCarsArray);
+   // console.log(filterYearLess2000);
 }
 
-
-module.exports = { noOfCarsOlderThan2000, detailsOfCarsOlderThan2000};
+module.exports = carsOlderThan2000;

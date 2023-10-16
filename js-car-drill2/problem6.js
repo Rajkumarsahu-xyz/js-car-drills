@@ -6,7 +6,7 @@
 const invent = require("./inventory");
 
 function problem6(invent){
-    const BMW_Audi = invent.filter(cars => cars.car_make == "BMW" || cars.car_make == "Audi")
+    const BMW_Audi = invent.filter(cars => cars.car_make == "BMW" || cars.car_make == "Audi");
 
     console.log(JSON.stringify(BMW_Audi));
 }

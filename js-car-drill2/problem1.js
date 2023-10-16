@@ -13,4 +13,4 @@ function problem1(invent){
     console.log(`Car 33 is a ${filteredItem[0].car_year} ${filteredItem[0].car_make} ${filteredItem[0].car_model}`)
 }
 
-module.exports = { problem1 }
+module.exports = { problem1 };
